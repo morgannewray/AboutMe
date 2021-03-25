@@ -22,6 +22,7 @@ const CardItem = (props) => {
             <View style={styles.close}>
               <Button
                 title="close"
+                color="black"
                 mode="contained"
                 onPress={() => setModalOpen(false)}
               />
@@ -32,17 +33,9 @@ const CardItem = (props) => {
 
       <View style={styles.buttonContainer}>
         <InfoButton
-          type="primary"
           content={"More Info"}
           onPress={() => {
             setModalOpen(true);
-          }}
-        />
-        <InfoButton
-          type="secondary"
-          content={"No Info"}
-          onPress={() => {
-            console.warn("No Problem");
           }}
         />
       </View>

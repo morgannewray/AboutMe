@@ -18,13 +18,15 @@ const styles = StyleSheet.create({
   },
   title: {
     fontSize: 40,
-    color: "#0c3617",
+    color: "#242526",
     fontWeight: "500",
+    fontFamily: "Optima",
   },
   subtitle: {
     fontSize: 20,
     color: "#5c5e62",
     fontWeight: "500",
+    fontFamily: "Palatino",
   },
   buttonContainer: {
     position: "absolute",
@@ -36,13 +38,15 @@ const styles = StyleSheet.create({
     justifyContent: "center",
     flex: 1,
     padding: 20,
-    backgroundColor: "#b8c2bb",
+    backgroundColor: "#939597",
   },
   popupText: {
-    fontSize: 20,
+    fontSize: 24,
     alignItems: "center",
     textAlign: "center",
-    color: "#0c3617",
+    color: "white",
+    fontWeight: "500",
+    fontFamily: "Optima",
   },
   close: {
     marginTop: 30,

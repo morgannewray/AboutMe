@@ -4,14 +4,14 @@ export default [
     tagline: "Coming to you soon!",
     image: require("../../assets/images/mountain.jpg"),
     info:
-      "Hey, I'm Morganne! I'm a native Nebraskan turned East Coaster about decade ago. My past fields of work include fashion, food, and hospitality.",
+      "Hey, I'm Morganne! I'm a native Nebraskan turned East Coaster about decade ago. My past fields of work include fashion, food, and hospitality. Scroll to find out more!",
   },
   {
     name: "Developer",
     tagline: "by day",
     image: require("../../assets/images/coder.jpg"),
     info:
-      "Fullstack Academy graduate studying JavaScript, HTML, CSS, React, React Native, Redux and many more!",
+      "Fullstack Academy graduate specializing in JavaScript, HTML, CSS, React, React Native, Redux and many more!",
   },
   {
     name: "Chef",
@@ -26,6 +26,12 @@ export default [
     image: require("../../assets/images/dog.jpg"),
     info:
       "That cute fluff is Dutch the Goldendoodle. He is 4 years old and in need of a haircut.",
+  },
+  {
+    name: "Pokemon Trainer",
+    tagline: "on the weekends",
+    image: require("../../assets/images/pokemon.jpg"),
+    info: "Gotta catch 'em all!",
   },
   {
     name: "Wine Connoisseur",

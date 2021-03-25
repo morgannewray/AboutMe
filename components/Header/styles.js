@@ -15,7 +15,7 @@ const styles = StyleSheet.create({
     resizeMode: "contain",
   },
   contact: {
-    marginLeft: 230,
+    marginLeft: 200,
     resizeMode: "contain",
   },
   info: {
@@ -23,13 +23,24 @@ const styles = StyleSheet.create({
     justifyContent: "center",
     flex: 1,
     padding: 20,
-    backgroundColor: "#b8c2bb",
+    backgroundColor: "#939597",
   },
   popupText: {
     fontSize: 20,
     alignItems: "center",
     textAlign: "center",
-    color: "#0c3617",
+    color: "white",
+    fontWeight: "500",
+    fontFamily: "Optima",
+  },
+  hyperlink: {
+    fontSize: 20,
+    alignItems: "center",
+    textAlign: "center",
+    color: "blue",
+    textDecorationLine: "underline",
+    fontWeight: "500",
+    fontFamily: "Optima",
   },
   close: {
     marginTop: 30,

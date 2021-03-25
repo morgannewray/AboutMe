@@ -6,6 +6,7 @@ import {
   Modal,
   Text,
   Button,
+  Linking,
 } from "react-native";
 import { Mail } from "react-native-feather";
 
@@ -31,7 +32,12 @@ const Header = () => {
           <View style={styles.info}>
             <Text style={styles.popupText}>
               For more information please contact{" "}
-              <Text>morgannewray@gmail.com</Text>
+              <Text
+                style={styles.hyperlink}
+                onPress={() => Linking.openURL("mailto:morgannewray@gmail.com")}
+              >
+                morgannewray@gmail.com
+              </Text>
             </Text>
             <View style={styles.close}>
               <Button
