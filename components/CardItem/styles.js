@@ -24,11 +24,7 @@ const styles = StyleSheet.create({
   subtitle: {
     fontSize: 20,
     color: "#5c5e62",
-  },
-  subtitleCTA: {
-    fontSize: 20,
-    color: "#5c5e62",
-    textDecorationLine: "underline",
+    fontWeight: "500",
   },
   buttonContainer: {
     position: "absolute",

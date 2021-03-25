@@ -1,8 +1,7 @@
 export default [
   {
     name: "Morganne Wray",
-    tagline: "Coming to you ",
-    taglineCTA: "soon!",
+    tagline: "Coming to you soon!",
     image: require("../../assets/images/mountain.jpg"),
     info:
       "Hey, I'm Morganne! I'm a native Nebraskan turned East Coaster about decade ago. My past fields of work include fashion, food, and hospitality.",

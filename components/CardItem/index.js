@@ -4,7 +4,7 @@ import styles from "./styles";
 import InfoButton from "../InfoButton";
 
 const CardItem = (props) => {
-  const { name, tagline, image, info, taglineCTA } = props.card;
+  const { name, tagline, image, info } = props.card;
   const [modalOpen, setModalOpen] = useState(false);
 
   return (
@@ -13,27 +13,24 @@ const CardItem = (props) => {
 
       <View style={styles.titles}>
         <Text style={styles.title}>{name}</Text>
-        <Text style={styles.subtitle}>
-          {tagline}
-          <Text style={styles.subtitleCTA}>{taglineCTA}</Text>
-        </Text>
+        <Text style={styles.subtitle}>{tagline}</Text>
       </View>
-      <View style={styles.buttonContainer}>
-        <View>
-          <Modal visible={modalOpen} animationType="slide">
-            <View style={styles.info}>
-              <Text style={styles.popupText}>{info}</Text>
-              <View style={styles.close}>
-                <Button
-                  title="close"
-                  mode="contained"
-                  onPress={() => setModalOpen(false)}
-                />
-              </View>
+      <View>
+        <Modal visible={modalOpen} animationType="slide">
+          <View style={styles.info}>
+            <Text style={styles.popupText}>{info}</Text>
+            <View style={styles.close}>
+              <Button
+                title="close"
+                mode="contained"
+                onPress={() => setModalOpen(false)}
+              />
             </View>
-          </Modal>
-        </View>
+          </View>
+        </Modal>
+      </View>
 
+      <View style={styles.buttonContainer}>
         <InfoButton
           type="primary"
           content={"More Info"}
@@ -43,9 +40,9 @@ const CardItem = (props) => {
         />
         <InfoButton
           type="secondary"
-          content={"Less Info"}
+          content={"No Info"}
           onPress={() => {
-            console.warn("Less info requested");
+            console.warn("No Problem");
           }}
         />
       </View>
